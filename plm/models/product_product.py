@@ -1071,8 +1071,9 @@ class PlmComponent(models.Model):
                 product.with_context(ctx).on_change_tmpmater()
                 product.with_context(ctx).on_change_tmpsurface()
                 product.with_context(ctx).on_change_tmptreatment()
-        if self._origin.id: 
-            self.checkFromOdooPlm()
+# COMMENTING THIS OUT TO TEMPORARILY FIX A BUG WHEN CREATING A PRODUCT WITH MULTIPLE VARIANTS.
+#        if self._origin.id: 
+#            self.checkFromOdooPlm()
         return res
 
     def read(self, fields=[], load='_classic_read'):
