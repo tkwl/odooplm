@@ -34,6 +34,7 @@
                                          'cadquery2',
                                          'numpy-stl']},
     "data": [
+        15.0
         #
         # security
         #
